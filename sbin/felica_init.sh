@@ -1,6 +1,6 @@
 #!/system/bin/sh
 
-FELICA_KEY_FILE=/data/media/TweakS3A/felica_key
+FELICA_KEY_FILE=/data/media/0/TweakS3A/felica_key
 
 if [ -f $FELICA_KEY_FILE ]; then
     FELICA_KEY=`cat $FELICA_KEY_FILE`

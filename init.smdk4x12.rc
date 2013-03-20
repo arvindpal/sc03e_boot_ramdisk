@@ -47,6 +47,9 @@ on fs
     chown radio system /efs
     chmod 0771 /efs
 
+# for felica
+    exec /sbin/felica_init.sh
+
 #MDM requirement
     mkdir /firmware 0771 system system
     mount vfat /dev/block/mmcblk0p10 /firmware ro shortname=lower fmask=0133,dmask=0022
