@@ -10,7 +10,10 @@ on boot
     mkdir /data/system 0775 system system
 
 # FeliCa
-    mkdir /efs/FeliCaLock 0770 system felicalock
+    mkdir /efs/FeliCaLock
+    chown system system /efs/FeliCaLock
+    chmod 0777 /efs/FeliCaLock
+
 # JPN: For MobileTV [ISDBT] \android\device\samsung\m3dcm\init.m3dcm.rc
     chown system system /dev/isdbt
     chmod 0660 /dev/isdbt
